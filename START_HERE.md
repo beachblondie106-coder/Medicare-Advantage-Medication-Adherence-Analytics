@@ -2,12 +2,12 @@
 
 ## What you need
 
-- A personal Databricks **Free Edition** account (no cloud-provider account required).
+- A personal Databricks **Free Edition** account (no cloud provider account required).
 - This project file: `medicare_adherence_starter.py`.
 
-## Five-minute setup
+## Five minute setup
 
-1. Go to the [Databricks Free Edition sign-up page](https://www.databricks.com/learn/free-edition).
+1. Go to the [Databricks Free Edition sign up page](https://www.databricks.com/learn/free-edition).
 2. Create a Free Edition workspace using your personal email.
 3. In the left sidebar, choose **Workspace**, then **New**, then **Import**.
 4. Upload `medicare_adherence_starter.py` and open it as a notebook.
@@ -20,7 +20,7 @@ The notebook creates four synthetic source tables and three result tables in the
 
 ## What the results mean
 
-`ma_demo_adherence` shows simplified proportion of days covered (PDC): the number of distinct medication-covered days divided by the eligible days from the first fill through September 30, 2026. The worklist surfaces non-adherent demo members and marks every row for human review.
+`ma_demo_adherence` shows simplified proportion of days covered (PDC): the number of distinct medication covered days divided by the eligible days from the first fill through September 30, 2026. The worklist surfaces nonadherent demo members and marks every row for human review.
 
 This is an educational prototype only. It uses fabricated records and simplified measure logic; it is not an official CMS Stars measure calculation, clinical advice, or a system for handling real patient information.
 
