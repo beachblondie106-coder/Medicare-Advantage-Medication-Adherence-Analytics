@@ -124,10 +124,12 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 | [KPI definitions](docs/kpi_definitions.md) | Definitions and intended interpretation of dashboard metrics |
 | [Methodology](docs/methodology.md) | Calculation approach, assumptions, and limitations |
 | [QA checklist](docs/qa_checklist.md) | Validation steps performed for the demo |
+| [Dashboard PDF](docs/dashboard.pdf) | Exported dashboard for portable review |
 | [assets/](assets/) | Dashboard preview images used in this README |
 
 ## How to View the Project
 
+- Open the **Dashboard PDF** for a quick review of the completed Databricks dashboard.
 - Review the dashboard preview images above for a fast overview directly within GitHub.
 - Open the **Python notebook source** in Databricks to recreate the synthetic data and analytical tables.
 - Run the **SQL query pack** in Databricks SQL to create or refresh the dashboard datasets.
