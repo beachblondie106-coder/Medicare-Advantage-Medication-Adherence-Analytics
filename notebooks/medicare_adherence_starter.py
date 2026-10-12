@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # Medicare Advantage Medication-Adherence Starter
+# MAGIC # Medicare Advantage Medication Adherence Analytics
 # MAGIC This educational notebook uses entirely synthetic data. Do not replace it
 # MAGIC with real patient information in a personal Databricks workspace.
 
