@@ -1,0 +1,16 @@
+# Local and Databricks workspace artifacts
+.databricks/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Temporary files and operating-system metadata
+*.tmp
+*.log
+Thumbs.db
+Desktop.ini
+
+# Keep source data local unless intentionally curated for the repository
+data/*.csv
+
