@@ -8,7 +8,7 @@ Built with **Databricks, PySpark, Spark SQL, Delta tables, and Databricks SQL da
 
 ## Project Overview
 
-Medication-adherence teams need a reliable way to identify members who may need review, understand which medication-measure families are underperforming, and trace important data-quality decisions. This project brings fictional member, enrollment, medication, and prescription-fill data into a simplified medication-adherence model that supports both population monitoring and human review.
+Medication adherence teams need a reliable way to identify members who may need review, understand which medication-measure families are underperforming, and trace important data-quality decisions. This project brings fictional member, enrollment, medication, and prescription-fill data into a simplified medication-adherence model that supports both population monitoring and human review.
 
 The completed demo dataset contains:
 
