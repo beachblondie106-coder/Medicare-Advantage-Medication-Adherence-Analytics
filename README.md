@@ -1,4 +1,4 @@
-# Medicare Advantage Quality & Medication-Adherence Lakehouse
+# Medicare Advantage Medication Adherence Analytics
 
 A Databricks portfolio project analyzing synthetic pharmacy fills, enrollment windows, medication adherence, reversed fills, and member-level review opportunities across a fictional Medicare Advantage-style population.
 
