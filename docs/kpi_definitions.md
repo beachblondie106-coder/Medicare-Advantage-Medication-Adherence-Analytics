@@ -13,11 +13,11 @@ For this demonstration, the measurement period begins with a member's first elig
 | KPI | Definition | Portfolio interpretation |
 |---|---|---|
 | PDC | Covered days divided by eligible days. | Higher is better; 80% or greater is marked adherent in this demo. |
-| Adherence rate | Members with PDC >= 80% divided by included members. | Measure-family performance indicator. |
-| Average PDC | Average member-level PDC within a measure family. | Population adherence trend indicator. |
+| Adherence rate | Members with PDC >= 80% divided by included members. | Measure performance indicator. |
+| Average PDC | Average member level PDC within a measure. | Population adherence trend indicator. |
 | Gap days | Eligible days minus covered days. | A larger gap indicates a larger potential adherence opportunity. |
-| Included members | Members with an eligible, non-reversed paid fill represented in the measure result. | Denominator used by the demo summary. |
-| Reversed-fill exclusions | Paid fills matching a reversal in the demo match key. | Data-quality control that prevents canceled fills from inflating PDC. |
+| Included members | Members with an eligible, nonreversed paid fill represented in the measure result. | Denominator used by the demo summary. |
+| Reversed fill exclusions | Paid fills matching a reversal in the demo match key. | Data quality control that prevents canceled fills from inflating PDC. |
 
 ## Worklist priority rules
 
