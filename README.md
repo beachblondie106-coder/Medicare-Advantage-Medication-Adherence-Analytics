@@ -21,15 +21,15 @@ The completed demo dataset contains:
 
 ## Dashboard Preview
 
-### 1. Adherence Rate by Measure Family
+### 1. Adherence Rate by Measure
 
-![Adherence Rate by Measure Family](assets/adherence-rate-by-measure-family.png)
+![Adherence Rate by Measure](assets/adherence-rate-by-measure-family.png)
 
-Compares the share of members meeting the 80% PDC demo threshold for each medication-measure family.
+Compares the share of members meeting the 80% PDC demo threshold for each medication measure.
 
-### 2. Member Counts by Measure Family and PDC Band
+### 2. Member Counts by Measure and PDC Band
 
-![Member Counts by Measure Family and PDC Band](assets/member-counts-pdc-band.png)
+![Member Counts by Measure and PDC Band](assets/member-counts-pdc-band.png)
 
 Shows how members are distributed below 50%, between 50% and 79.9%, or at/above 80% PDC.
 
@@ -37,7 +37,7 @@ Shows how members are distributed below 50%, between 50% and 79.9%, or at/above 
 
 ![Monthly Average PDC Trend](assets/monthly-average-pdc-trend.png)
 
-Tracks the average PDC percentage for each measure family from January through September 2026.
+Tracks the average PDC percentage for each measure from January through September 2026.
 
 ### 4. Human Review Worklist
 
@@ -61,7 +61,7 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 | Adherence threshold | 80% PDC |
 | PDC bands displayed | 3 |
 | Analytical output tables | 5 |
-| Dashboard operational worklist | Member × measure family |
+| Dashboard operational worklist | Member × measure |
 | Reversal audit | Matched paid-fill/reversal events |
 
 ## Key Findings
@@ -78,7 +78,7 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 1. Which medication-measure families have the strongest and weakest adherence performance?
 2. How are members distributed across low, moderate, and adherent PDC bands?
 3. Which members may need human review based on PDC and medication-coverage gap days?
-4. How has average PDC changed each month by medication-measure family?
+4. How has average PDC changed each month by medication measure?
 5. Which paid fills were excluded because they had a matching reversal?
 6. How can a quality-operations team review medication-adherence results with a transparent audit trail?
 
@@ -88,7 +88,7 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 2. Created managed Delta tables in Databricks for the source data and analytical outputs.
 3. Matched paid fills to reversals and excluded matched reversed fills before calculating medication coverage.
 4. Expanded eligible paid fills into covered calendar days, constrained by enrollment dates and the reporting cutoff.
-5. Calculated simplified Proportion of Days Covered (PDC) by member and medication-measure family.
+5. Calculated simplified Proportion of Days Covered (PDC) by member and medication measure.
 6. Applied an 80% PDC demo threshold and created a prioritized human-review worklist.
 7. Built monthly PDC snapshots and Spark SQL queries for dashboard reporting.
 8. Validated dashboard totals, measure labels, reversal exclusions, and worklist logic.
@@ -96,9 +96,9 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 
 ## Dashboard Features
 
-- Adherence-rate comparison by medication-measure family
+- Adherence-rate comparison by medication measure
 - Member distribution by PDC band: below 50%, 50%–79.9%, and 80% or higher
-- Monthly average PDC trend by measure family
+- Monthly average PDC trend by measure
 - Member-level human-review worklist with PDC, gap days, priority, and recommended action
 - Reversed-fill audit table
 - Full measure names in tables and abbreviated codes in charts for readability
