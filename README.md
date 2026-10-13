@@ -2,13 +2,13 @@
 
 A Databricks portfolio project analyzing synthetic pharmacy fills, enrollment windows, medication adherence, reversed fills, and member level review opportunities across a fictional Medicare Advantage style population.
 
-Built with **Databricks, PySpark, Spark SQL, Delta tables, and Databricks SQL dashboards** to demonstrate an end to end analytics workflow from synthetic data generation and adherence calculation through operational reporting and auditability.
+Built with **Databricks, PySpark, Spark SQL, Delta tables, and Databricks SQL dashboards** to show how synthetic data can move from a Databricks notebook into reporting tables, a dashboard, and a clear audit trail.
 
 > **Portfolio disclaimer:** This project uses synthetic data and fictional member, plan, medication, and prescription fill records. It was created independently for educational and portfolio purposes. It does not represent a healthcare organization, contain protected health information, implement official CMS Stars specifications, or provide clinical decision support.
 
 ## Project Overview
 
-Medication adherence teams need a reliable way to identify members who may need review, understand which medication measures are underperforming, and trace important data quality decisions. This project brings fictional member, enrollment, medication, and prescription fill data into a simplified medication adherence model that supports both population monitoring and human review.
+Medication adherence teams need a clear way to find members who may need review, compare results across measures, and see why data was included or excluded. This project uses fictional member, enrollment, medication, and prescription fill data to show that process.
 
 The completed demo dataset contains:
 
@@ -69,9 +69,9 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 - The dashboard makes adherence performance comparable across diabetes, hypertension, and cholesterol medication families.
 - Member level PDC bands distinguish high risk members below 50% PDC from members closer to the 80% demo threshold.
 - The monthly PDC trend reveals how average medication coverage changes across the reporting period instead of relying only on a single cutoff date.
-- The human review worklist converts nonadherence results into a prioritized starting point for authorized staff to verify access and outreach eligibility.
+- The human review worklist gives staff a starting list for checking access and outreach eligibility.
 - The reversed fill audit shows why an event was excluded, preventing canceled fills from inflating medication covered days.
-- Results are intentionally framed for human review. They are not automated outreach, coverage, or clinical decisions.
+- The results support human review. They do not trigger outreach, coverage, or clinical decisions automatically.
 
 ## Business Questions Addressed
 
@@ -99,7 +99,7 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 - Adherence rate comparison by medication measure
 - Member distribution by PDC band: below 50%, 50%–79.9%, and 80% or higher
 - Monthly average PDC trend by measure
-- Member level human review worklist with PDC, gap days, priority, and recommended action
+- Human review worklist with PDC, gap days, priority, and recommended action
 - Reversed fill audit table
 - Full measure names in tables and abbreviated codes in charts for readability
 - Dashboard refresh through Databricks SQL
@@ -109,10 +109,10 @@ Shows paid fills removed from the simplified PDC calculation because the synthet
 - **Databricks:** Notebook development, managed Delta tables, SQL datasets, and interactive dashboard development
 - **PySpark:** Synthetic data generation, date logic, transformations, medication covered day expansion, and PDC calculations
 - **Spark SQL:** Dashboard data retrieval, aggregation, ranking, and audit queries
-- **Delta Lake:** Structured analytical data storage for source and output tables
+- **Delta Lake:** Structured storage for source and reporting tables
 - **Healthcare quality analytics:** Medication adherence, PDC, enrollment-aware coverage, fill reversals, and operational review workflows
 - **Data quality and auditability:** Reversal matching, transparent exclusion reasons, and QA validation
-- **Data storytelling:** Translating member level adherence data into population monitoring and review priorities
+- **Data storytelling:** Turning adherence results into population monitoring and review priorities
 
 ## Repository Files
 
